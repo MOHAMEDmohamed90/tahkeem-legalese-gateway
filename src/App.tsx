@@ -9,6 +9,7 @@ import Dashboard from "./pages/Dashboard";
 import CaseSubmission from "./pages/CaseSubmission";
 import ArbitratorProfile from "./pages/ArbitratorProfile";
 import NotFound from "./pages/NotFound";
+import Messages from "./pages/Messages";
 
 const queryClient = new QueryClient();
 
