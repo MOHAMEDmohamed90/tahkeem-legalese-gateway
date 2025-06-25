@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -18,10 +19,11 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button 
+              asChild
               size="lg" 
               className="bg-tahkeem-gold-500 hover:bg-tahkeem-gold-600 text-white px-8 py-4 text-lg font-semibold arabic-text transition-all duration-300 transform hover:scale-105"
             >
-              إنشاء حساب جديد
+              <Link to="/dashboard">لوحة التحكم</Link>
             </Button>
             <Button 
               variant="outline" 
