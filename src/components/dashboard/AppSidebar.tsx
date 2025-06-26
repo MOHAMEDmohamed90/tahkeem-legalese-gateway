@@ -32,7 +32,7 @@ const menuItems = [
   },
   {
     title: "المدفوعات",
-    url: "#",
+    url: "/payment",
     icon: CreditCard,
   },
   {
