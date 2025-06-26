@@ -17,17 +17,17 @@ import { Button } from "@/components/ui/button";
 const menuItems = [
   {
     title: "قضاياي",
-    url: "#",
+    url: "/dashboard",
     icon: Scale,
   },
   {
     title: "بدء قضية جديدة",
-    url: "#",
+    url: "/case-submission",
     icon: Plus,
   },
   {
     title: "الرسائل",
-    url: "#",
+    url: "/messages",
     icon: MessageSquare,
   },
   {
@@ -37,7 +37,7 @@ const menuItems = [
   },
   {
     title: "ملفي الشخصي",
-    url: "#",
+    url: "/arbitrator/:id",
     icon: User,
   },
 ];
@@ -71,7 +71,9 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter className="p-4">
-        <Button variant="outline" className="w-full arabic-text">
+        <Button onClick={() => {
+          window.location.href = "/";
+        }} variant="outline" className="w-full arabic-text">
           تسجيل الخروج
         </Button>
       </SidebarFooter>

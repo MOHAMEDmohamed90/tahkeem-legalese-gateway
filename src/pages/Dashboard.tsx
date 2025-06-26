@@ -4,10 +4,10 @@ import { AppSidebar } from "@/components/dashboard/AppSidebar";
 import { DashboardContent } from "@/components/dashboard/DashboardContent";
 
 const Dashboard = () => {
-  return (
+  return ( 
     <div className="min-h-screen bg-gradient-section">
-      <SidebarProvider>
-        <div className="min-h-screen flex w-full">
+      <SidebarProvider className="fixed right-0 left-auto direction-rtl">
+        <div className="min-h-screen flex flex-row-reverse w-full">
           <AppSidebar />
           <main className="flex-1 p-4">
             <div className="flex items-center gap-4 mb-6">
@@ -19,6 +19,7 @@ const Dashboard = () => {
         </div>
       </SidebarProvider>
     </div>
+
   );
 };
 
