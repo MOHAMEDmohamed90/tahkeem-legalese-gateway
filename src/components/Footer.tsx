@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
             size="lg" 
             className="bg-tahkeem-gold-500 hover:bg-tahkeem-gold-600 text-white px-12 py-4 text-xl font-semibold arabic-text transition-all duration-300 transform hover:scale-105"
           >
-            إنشاء حساب مجاني
+              <Link to="/auth">إنشاء حساب مجاني</Link>
           </Button>
         </div>
 

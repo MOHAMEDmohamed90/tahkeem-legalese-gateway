@@ -16,7 +16,7 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button asChild size="lg" className="bg-tahkeem-gold-500 hover:bg-tahkeem-gold-600 text-white px-8 py-4 text-lg font-semibold arabic-text transition-all duration-300 transform hover:scale-105">
-              <Link to="/dashboard">لوحة التحكم</Link>
+              <Link to="/auth">لوحة التحكم</Link>
             </Button>
             <Button variant="outline" size="lg" className="border-white hover:bg-white hover:text-tahkeem-blue-900 px-8 py-4 text-lg font-semibold arabic-text transition-all duration-300 text-slate-700">
               اكتشف المزيد

@@ -27,14 +27,19 @@ export const LoginForm = ({ onSwitchToRegister, onForgotPassword }: LoginFormPro
   const onSubmit = async (data: LoginFormData) => {
     setIsLoading(true);
     console.log("Login attempt:", data);
-    // Simulate API call
-    setTimeout(() => {
-      setIsLoading(false);
-      // Redirect to dashboard on success
-      window.location.href = "/dashboard";
-    }, 1000);
+  
+    if (data.email === "admin@email.com") {
+      setTimeout(() => {
+        setIsLoading(false);
+        window.location.href = "/dashboard";
+      }, 800);
+    } else {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 800);
+    }
   };
-
+  
   return (
     <div className="space-y-6">
       <div className="text-center">
