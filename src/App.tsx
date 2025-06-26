@@ -12,6 +12,7 @@ import NotFound from "./pages/NotFound";
 import Messages from "./pages/Messages";
 import Payment from "./pages/Payment";
 import Auth from "./pages/Auth";
+import Onboarding from "./pages/Onboarding";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/onboarding" element={<Onboarding />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/case-submission" element={<CaseSubmission />} />
           <Route path="/arbitrator/:id" element={<ArbitratorProfile />} />
