@@ -11,6 +11,7 @@ import ArbitratorProfile from "./pages/ArbitratorProfile";
 import NotFound from "./pages/NotFound";
 import Messages from "./pages/Messages";
 import Payment from "./pages/Payment";
+import Auth from "./pages/Auth";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/auth" element={<Auth />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/case-submission" element={<CaseSubmission />} />
           <Route path="/arbitrator/:id" element={<ArbitratorProfile />} />
