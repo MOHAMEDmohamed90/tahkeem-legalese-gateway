@@ -10,6 +10,7 @@ import CaseSubmission from "./pages/CaseSubmission";
 import ArbitratorProfile from "./pages/ArbitratorProfile";
 import NotFound from "./pages/NotFound";
 import Messages from "./pages/Messages";
+import Payment from "./pages/Payment";
 
 const queryClient = new QueryClient();
 
