@@ -358,7 +358,7 @@ export const JudgeOnboarding: React.FC = () => {
       title={steps[currentStep].title}
       subtitle={steps[currentStep].subtitle}
       showSkip={false}
-      canGoNext={currentStep === 1 ? formData.formerCourt && formData.yearsOfService && formData.retirementYear && formData.specialization : true}
+      canGoNext={currentStep === 1 ? Boolean(formData.formerCourt && formData.yearsOfService && formData.retirementYear && formData.specialization) : true}
     >
       {renderStepContent()}
     </OnboardingLayout>

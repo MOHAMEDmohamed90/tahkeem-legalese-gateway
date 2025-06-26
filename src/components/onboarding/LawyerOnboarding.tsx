@@ -346,7 +346,7 @@ export const LawyerOnboarding: React.FC = () => {
       subtitle={steps[currentStep].subtitle}
       showSkip={currentStep < steps.length - 2}
       onSkip={() => window.location.href = '/dashboard'}
-      canGoNext={currentStep === 1 ? formData.barNumber && formData.experience && formData.jurisdiction : true}
+      canGoNext={currentStep === 1 ? Boolean(formData.barNumber && formData.experience && formData.jurisdiction) : true}
     >
       {renderStepContent()}
     </OnboardingLayout>
